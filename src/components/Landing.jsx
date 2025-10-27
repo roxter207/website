@@ -17,16 +17,13 @@ const LandingPage = () => {
   return (
     <>
       {/* Landing Section */}
-      <div
-        id="home"
-        className="bg-[#f3f4f6] text-gray-800 min-h-screen flex flex-col"
-      >
+      
         {/* Navbar */}
         <Navbar />
 
         {/* Hero Section */}
         
-      </div>
+    
 
       {/* Other sections */}
      
