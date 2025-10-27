@@ -14,7 +14,7 @@ import StorySection from "./components/Storysection";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/website">
         <ScrollTotop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
