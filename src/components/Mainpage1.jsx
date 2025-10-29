@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import logo from "./assets/logo.png";
+import logo from "../assets/logo.png";
 
 const Mainpage1 = () => {
   return (
