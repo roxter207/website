@@ -16,28 +16,28 @@ const Solutions = () => {
 
   const featurePoints = [
     {
-      icon: <FaCogs className="text-purple-400 text-lg flex-shrink-0" />,
-      text: "Tailored distribution strategies designed around your business goals.",
-    },
-    {
-      icon: <FaPrint className="text-purple-400 text-lg flex-shrink-0" />,
-      text: "On-demand printing and personalization—crafted with precision and speed.",
-    },
-    {
-      icon: <FaComments className="text-purple-400 text-lg flex-shrink-0" />,
-      text: "Seamless, automated customer communication that strengthens engagement.",
-    },
-    {
       icon: (
         <FaShippingFast className="text-purple-400 text-lg flex-shrink-0" />
       ),
       text: "Efficient and transparent shipping solutions customized for your brand.",
     },
     {
+      icon: <FaCogs className="text-purple-400 text-lg flex-shrink-0" />,
+      text: "Tailored distribution strategies designed around your business goals.",
+    },
+    {
       icon: (
         <FaHandsHelping className="text-purple-400 text-lg flex-shrink-0" />
       ),
-      text: "Dedicated one-on-one support that’s always just a call away.",
+      text: "Device refurbishment & advanced testing capabilities to keep your product in-market longer",
+    },
+    {
+      icon: <FaComments className="text-purple-400 text-lg flex-shrink-0" />,
+      text: "Seamless, automated customer communication that strengthens engagement.",
+    },
+    {
+      icon: <FaPrint className="text-purple-400 text-lg flex-shrink-0" />,
+      text: "On-demand printing and personalization—crafted with precision and speed.",
     },
   ];
 
@@ -83,11 +83,11 @@ const Solutions = () => {
 
           <p className="text-base md:text-lg text-gray-300 mb-8">
             At{" "}
-            <span className="font-semibold text-purple-400">MDM Solutions</span>
+            <span className="font-semibold text-purple-400">
+              MDM Business Solutions
+            </span>
             , we don’t believe in one-size-fits-all solutions. We partner with
-            you to design strategies that simplify operations, enhance
-            visibility, and bring efficiency to every step of your distribution
-            process.
+            you to
           </p>
 
           <motion.ul
@@ -107,7 +107,7 @@ const Solutions = () => {
 
           <p className="text-base md:text-lg text-gray-300 mt-8">
             Discover the one-stop solution designed to move your business
-            forward—seamlessly and smartly.
+            forward seamlessly and strategically.
           </p>
 
           <motion.button
@@ -120,7 +120,7 @@ const Solutions = () => {
             className="mt-7 inline-flex items-center px-8 py-3 rounded-full font-medium text-white 
                        bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg hover:opacity-90 transition-all duration-300"
           >
-            Book A Meeting →
+            Get A Quote →
           </motion.button>
         </motion.div>
       </div>

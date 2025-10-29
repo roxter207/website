@@ -7,25 +7,32 @@ const FloatingCards = () => {
   const navigate = useNavigate();
   const cards = [
     {
-      icon: <FaCogs className="text-blue-600 text-2xl " />,
-      title: "Equipment",
-      link: "/equipment",
-      //   text: "High-grade tools and professional-grade resources to deliver consistent precision.",
-    },
-    {
-      icon: <FaPrint className="text-purple-600 text-2xl " />,
-      title: "Print and Packing",
-      link: "/print",
-
-      //   text: "Seamless printing and packaging solutions designed for quality and efficiency.",
-    },
-    {
       icon: <FaBox className="text-indigo-600 text-2xl" />,
       title: "Fulfilment",
       link: "/fulfilment",
 
       //   text: "End-to-end logistics that ensure reliable delivery and customer satisfaction.",
     },
+    {
+      icon: <FaCogs className="text-blue-600 text-2xl " />,
+      title: "Reverse Logistics",
+      link: "",
+      //   text: "High-grade tools and professional-grade resources to deliver consistent precision.",
+    },
+        {
+      icon: <FaCogs className="text-blue-600 text-2xl " />,
+      title: "Equipment Testing",
+      link: "/equipment",
+      //   text: "High-grade tools and professional-grade resources to deliver consistent precision.",
+    },
+    {
+      icon: <FaPrint className="text-purple-600 text-2xl " />,
+      title: "On Demand Print Service",
+      link: "/print",
+
+      //   text: "Seamless printing and packaging solutions designed for quality and efficiency.",
+    },
+    
   ];
 
   return (

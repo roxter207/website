@@ -10,8 +10,7 @@ import FloatingCards from "./FloatingCards";
 import Contact from "./Contact";
 import StockStickers from "./StockStickers";
 import Testimonials from "./Testimonials";
-import StorySection from "./Storysection";
-import Mainpage1 from "./Mainpage1";
+
 
 const LandingPage = () => {
   return (
@@ -27,7 +26,7 @@ const LandingPage = () => {
 
       {/* Other sections */}
      
-      <Mainpage1 />
+   
       <StockStickers />
       <Solutions />
       <FloatingCards />

@@ -35,15 +35,15 @@ const About = () => {
               MDM Business Solutions
             </span>{" "}
             has evolved to meet the growing distribution demands of digital and
-            internet marketing channels. We specialize in both B2B and B2C
+            internet & netwokring equipments. We specialize in both B2B and B2C
             distribution — delivering excellence in outbound and reverse
             logistics.
             <br />
             <br />
-            Based in Oakville, our 30,000 sq. ft. facility and dedicated team of
-            50+ professionals enable us to provide seamless, end-to-end
-            inventory and distribution solutions that empower businesses to
-            operate with confidence and efficiency.
+            Based in Oakville, our full 360 product lifecycle management
+            approach enables us to provide seamless, end-to-end inventory and
+            distribution solutions that empower your businesses to grow with
+            confidence and efficiency.
           </p>
 
           <motion.button
