@@ -10,6 +10,7 @@ import FloatingCards from "./FloatingCards";
 import Contact from "./Contact";
 import StockStickers from "./StockStickers";
 import Testimonials from "./Testimonials";
+import Mainpage1 from "./Mainpage1";
 
 
 const LandingPage = () => {
@@ -21,6 +22,7 @@ const LandingPage = () => {
         <Navbar />
 
         {/* Hero Section */}
+        <Mainpage1/>
         
     
 
