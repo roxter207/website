@@ -7,7 +7,7 @@ import logo from "../assets/logo.png";
 
 const Mainpage1 = () => {
   return (
-     <div className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+    <div className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
       {/* Floating particles animation */}
       <motion.div
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_70%)]"
@@ -19,7 +19,7 @@ const Mainpage1 = () => {
       <motion.img
         src={logo}
         alt="Company Logo"
-        className="w-48 h-48 object-contain mb-8 z-10"
+        className="w-70 h-50 object-contain mb-8 z-10"
         initial={{ scale: 0, opacity: 0, rotate: -20 }}
         animate={{ scale: 1, opacity: 1, rotate: 0 }}
         transition={{ type: "spring", duration: 1.2 }}
@@ -48,14 +48,16 @@ const Mainpage1 = () => {
 
       {/* Button */}
       <motion.button
-        whileHover={{ scale: 1.1, boxShadow: "0 0 20px rgba(59,130,246,0.7)" }}
+        whileHover={{
+          scale: 1.07,
+          boxShadow: "0px 4px 25px rgba(139,92,246,0.4)",
+        }}
         whileTap={{ scale: 0.95 }}
-        className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors z-10"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
+        onClick={() => navigate("/bookmeeting")}
+        className="mt-7 inline-flex items-center px-8 py-3 rounded-full font-medium text-white 
+                             bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg hover:opacity-90 transition-all duration-300"
       >
-        Get A Quote
+        Get A Quote →
       </motion.button>
     </div>
   );

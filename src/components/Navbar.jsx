@@ -9,9 +9,9 @@ const WEB_PORTAL_URL = import.meta.env.VITE_WEB_PORTAL_URL;
 const BELL_RETURN_URL = import.meta.env.VITE_BELL_RETURN_URL;
 
 const navItems = [
-  { label: "home", type: "scroll", to: "home" },
+  { label: "Home", type: "scroll", to: "home" },
   {
-    label: "services",
+    label: "Services",
     type: "dropdown",
     items: [
       { label: "Print Procurement", to: "/print", type: "page" },
@@ -21,18 +21,18 @@ const navItems = [
     ],
   },
   {
-    label: "about",
+    label: "About",
     type: "dropdown",
     items: [
       { label: "Security & Privacy", to: "security", type: "scroll" },
       { label: "Industries Served", to: "industries", type: "scroll" },
     ],
   },
-  { label: "accessibility", type: "page", to: "/accessibilitysection" },
-  { label: "career", type: "page", to: "/career" },
-  { label: "contact", type: "scroll", to: "contact" },
-  { label: "web portal", type: "external", to: WEB_PORTAL_URL },
-  { label: "get a quote", type: "scroll", to: "contact", isButton: true }, // special button
+  { label: "Accessibility", type: "page", to: "/accessibilitysection" },
+  { label: "Career", type: "page", to: "/career" },
+  { label: "Contact", type: "scroll", to: "contact" },
+  { label: "Web Portal", type: "external", to: WEB_PORTAL_URL },
+  { label: "Get A Quote", type: "scroll", to: "contact", isButton: true }, // special button
 ];
 
 const Navbar = () => {
