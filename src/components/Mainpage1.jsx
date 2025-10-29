@@ -1,7 +1,9 @@
 // LandingPage.jsx
+
 import React from "react";
-import Navbar from "./Navbar";
-import warehouseBg from "../assets/warehouse.jpg"
+import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
+import logo from "./assets/logo.png";
 
 const Mainpage1 = () => {
   return (
