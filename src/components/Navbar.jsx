@@ -32,7 +32,7 @@ const navItems = [
   { label: "career", type: "page", to: "/career" },
   { label: "contact", type: "scroll", to: "contact" },
   { label: "web portal", type: "external", to: WEB_PORTAL_URL },
-  { label: "get a quote", type: "scroll", to: "contact", isButton: true }, // special button
+  { label: "get a quote", type: "scroll", to: "contact", isButton: true },
 ];
 
 const Navbar = () => {
@@ -88,6 +88,11 @@ const Navbar = () => {
           : "bg-[#f3f4f6]/90 shadow-none"
       }`}
     >
+      {/* Top contact bar */}
+      <div className="w-full bg-blue-600 text-white text-sm text-center py-1">
+        📞 Call us: <span className="font-semibold">(905) 555-1234</span>
+      </div>
+
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <motion.img
@@ -153,7 +158,7 @@ const Navbar = () => {
               );
             }
 
-            // Get A Quote button
+            // Get A Quote button (uppercase)
             if (item.isButton) {
               return (
                 <li key={item.label}>
@@ -163,7 +168,7 @@ const Navbar = () => {
                       boxShadow: "0 0 15px rgba(59,130,246,0.6)",
                     }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-6 py-2 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors"
+                    className="px-6 py-2 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors uppercase"
                     onClick={() => handleNavClick(item)}
                   >
                     {item.label}
@@ -204,6 +209,9 @@ const Navbar = () => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="md:hidden bg-white/30 backdrop-blur-md shadow-lg"
           >
+            <div className="bg-blue-600 text-white text-center py-2 text-sm">
+              📞 Call us: <span className="font-semibold">(905) 555-1234</span>
+            </div>
             <ul className="flex flex-col space-y-4 px-6 py-4 text-purple-700 font-semibold">
               {navItems.map((item) => {
                 if (item.type === "dropdown") {
@@ -225,12 +233,12 @@ const Navbar = () => {
                   );
                 }
 
-                // Get A Quote as normal link in mobile
+                // Get A Quote (uppercase)
                 if (item.isButton) {
                   return (
                     <li
                       key={item.label}
-                      className="hover:text-blue-900 cursor-pointer capitalize transition-colors duration-300"
+                      className="hover:text-blue-900 cursor-pointer capitalize transition-colors duration-300 uppercase"
                       onClick={() => handleNavClick(item)}
                     >
                       {item.label}
