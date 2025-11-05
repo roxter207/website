@@ -89,7 +89,7 @@ const Navbar = () => {
       }`}
     >
       {/* Top contact bar */}
-      <div className="w-full bg-blue-600 text-white text-sm text-center py-1">
+      <div className="w-ful text-sm text-right px-20 text-black">
         📞 Call us: <span className="font-semibold">(905) 555-1234</span>
       </div>
 

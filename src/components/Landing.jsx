@@ -11,6 +11,8 @@ import Contact from "./Contact";
 import StockStickers from "./StockStickers";
 import Testimonials from "./Testimonials";
 import Mainpage1 from "./Mainpage1";
+import Faq from "./Faq";
+import Footer from "./Footer"
 
 
 const LandingPage = () => {
@@ -36,7 +38,9 @@ const LandingPage = () => {
       <StockStickers />
       <LogisticBanner />
       <Testimonials />
+      <Faq/>
       <Contact />
+      <Footer/>
     </>
   );
 };

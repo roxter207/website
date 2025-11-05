@@ -5,13 +5,13 @@ import { useNavigate } from "react-router-dom";
 
 
 const Contact = () => {
-  const year = new Date().getFullYear();
+  
   const navigate = useNavigate();
 
   return (
     <section
       id="contact"
-      className="relative bg-gradient-to-br from-[#0b0f1a] via-[#111827] to-[#1f2937] text-white py-5 px-6 md:px-20"
+      className="relative bg-white text-black py-5 px-6 md:px-20"
     >
       {/* Title */}
       <div className="text-center mb-12">
@@ -86,18 +86,6 @@ const Contact = () => {
         </div>
       </div>
 
-
-
-      {/* Copyright Section */}
-      <div className="mt-10 border-t border-gray-700 pt-6 text-center">
-        <p className="text-sm md:text-base text-white">
-          © {year}{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400 font-semibold">
-            MDM Business Solutions Inc.
-          </span>{" "}
-          — All Rights Reserved.
-        </p>
-      </div>
     </section>
   );
 };
