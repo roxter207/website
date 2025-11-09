@@ -99,19 +99,7 @@ const BookMeeting = () => {
             </div>
           </div>
 
-          {/* Date */}
-          <div className="flex flex-col">
-            <label className="text-sm font-semibold mb-1">Preferred Date</label>
-            <input
-              type="date"
-              name="date"
-              required
-              value={formData.date}
-              onChange={handleChange}
-              className="px-4 py-3 rounded-xl border border-gray-300 bg-[#f9fafb] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-            />
-          </div>
-
+          
           {/* Message */}
           <div className="flex flex-col">
             <label className="text-sm font-semibold mb-1">Message</label>

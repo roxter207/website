@@ -84,7 +84,7 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-500 border-gray-200 ${
         scrolled
-          ? "bg-white/40 backdrop-blur-md shadow-lg border-gray-200/40"
+          ? "bg-white backdrop-blur-md shadow-lg border-gray-200/40"
           : "bg-[#f3f4f6]/90 shadow-none"
       }`}
     >
@@ -168,7 +168,7 @@ const Navbar = () => {
                       boxShadow: "0 0 15px rgba(59,130,246,0.6)",
                     }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-6 py-2 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors uppercase"
+                    className="px-6 py-2 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors uppercase hover:cursor-pointer"
                     onClick={() => handleNavClick(item)}
                   >
                     {item.label}
