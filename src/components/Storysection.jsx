@@ -2,18 +2,21 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
-
+import { useNavigate } from "react-router-dom"; // ✅ Add navigation hook
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img1.png";
 import img3 from "../assets/img1.png";
 import img4 from "../assets/img2.png";
 import boss1 from "../assets/img1.png";
 import boss2 from "../assets/img2.png";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const StorySection = () => {
   const containerRef = useRef(null);
+  const navigate = useNavigate(); // ✅ Initialize navigation
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -62,7 +65,10 @@ const StorySection = () => {
 
   return (
     <>
-      {/* Horizontal scroll story */}
+      {/* ✅ Pass navigate to Navbar */}
+      <Navbar onNavigate={(path) => navigate(path)} />
+
+      {/* Horizontal Scroll Section */}
       <section
         ref={containerRef}
         className="relative overflow-hidden bg-gradient-to-r from-blue-100 via-white to-blue-100"
@@ -77,6 +83,7 @@ const StorySection = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
                 className="max-w-lg text-center md:text-left"
               >
                 <h1 className="text-4xl md:text-6xl font-bold mb-4 text-blue-700">
@@ -94,19 +101,21 @@ const StorySection = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
               />
             </div>
           ))}
         </div>
       </section>
 
-      {/* Vertical section - "How It Started" */}
+      {/* Vertical Section - How It Started */}
       <section className="relative bg-white py-20 md:py-32 px-6 md:px-20">
         <div className="max-w-5xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
             className="text-5xl md:text-6xl font-bold text-center text-gray-800 mb-12"
           >
             How It Started
@@ -116,6 +125,7 @@ const StorySection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
+            viewport={{ once: true }}
             className="text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-3xl mx-auto"
           >
             What began as a humble effort to make an impact quickly became a
@@ -126,7 +136,7 @@ const StorySection = () => {
             call our company today.
           </motion.p>
 
-          {/* Tilted images */}
+          {/* Tilted Images */}
           <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
             <motion.img
               src={boss1}
@@ -135,6 +145,7 @@ const StorySection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
             />
             <motion.img
               src={boss2}
@@ -143,9 +154,11 @@ const StorySection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
             />
           </div>
         </div>
+
         {/* Final Section - The Journey Forward */}
         <section className="relative bg-gradient-to-b from-blue-50 via-white to-blue-200 mt-20 py-24 md:py-40 overflow-hidden rounded-2xl">
           <div className="max-w-6xl mx-auto px-6 md:px-20 text-center relative z-10">
@@ -153,6 +166,7 @@ const StorySection = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="text-5xl md:text-6xl font-extrabold text-gray-800 mb-6"
             >
               The Journey Forward
@@ -162,6 +176,7 @@ const StorySection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
               className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-16"
             >
               As we move ahead, our mission stays rooted in innovation and
@@ -183,6 +198,7 @@ const StorySection = () => {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
+                  viewport={{ once: true }}
                   className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all"
                 >
                   <h3 className="text-4xl font-extrabold text-blue-700">
@@ -198,6 +214,7 @@ const StorySection = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
               className="flex justify-center"
             >
               <motion.img
@@ -218,6 +235,7 @@ const StorySection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
+              viewport={{ once: true }}
               className="mt-16"
             >
               <a
@@ -228,22 +246,9 @@ const StorySection = () => {
               </a>
             </motion.div>
           </div>
-
-          {/* Parallax background accents */}
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-            <motion.div
-              className="absolute top-10 left-1/4 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl"
-              animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <motion.div
-              className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl"
-              animate={{ y: [0, -30, 0] }}
-              transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-            />
-          </div>
         </section>
       </section>
+      <Footer />
     </>
   );
 };
