@@ -41,7 +41,7 @@ const Mainpage1 = () => {
 
       {/* TYPEWRITER SECTION */}
       <motion.h2
-        className="text-3xl md:text-4xl font-semibold text-center mt-10"
+        className="text-3xl md:text-4xl font-semibold text-center mt-8"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1 }}
