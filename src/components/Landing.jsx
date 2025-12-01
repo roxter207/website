@@ -1,8 +1,6 @@
 // LandingPage.jsx
 import React, { useEffect, useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
 import Navbar from "./Navbar";
-import logo from "../assets/logo.png";
 import Solutions from "./Solutions";
 import LogisticBanner from "./LogisticBanner";
 import About from "./About";
@@ -12,25 +10,21 @@ import StockStickers from "./StockStickers";
 import Testimonials from "./Testimonials";
 import Mainpage1 from "./Mainpage1";
 import Faq from "./Faq";
-import Footer from "./Footer"
-
+import Footer from "./Footer";
 
 const LandingPage = () => {
   return (
     <>
       {/* Landing Section */}
-      
-        {/* Navbar */}
-        <Navbar />
 
-        {/* Hero Section */}
-        <Mainpage1/>
-        
-    
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Hero Section */}
+      <Mainpage1 />
 
       {/* Other sections */}
-     
-   
+
       <StockStickers />
       <Solutions />
       <FloatingCards />
@@ -38,9 +32,9 @@ const LandingPage = () => {
       <StockStickers />
       <LogisticBanner />
       <Testimonials />
-      <Faq/>
+      <Faq />
       <Contact />
-      <Footer/>
+      <Footer />
     </>
   );
 };

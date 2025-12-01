@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from "../assets/logo.png";
+import logo from "../assets/mdm_logo.jpg";
 import { useLocation, useNavigate } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
@@ -84,8 +84,8 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-500 border-gray-200 ${
         scrolled
-          ? "bg-white backdrop-blur-md shadow-lg border-gray-200/40"
-          : "bg-[#f3f4f6]/90 shadow-none"
+          ? "bg-[#f3f4f6]/90 backdrop-blur-md shadow-lg border-gray-200/40"
+          : "bg-white shadow-none"
       }`}
     >
       {/* Top contact bar */}
