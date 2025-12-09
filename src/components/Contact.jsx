@@ -15,7 +15,7 @@ const Contact = () => {
     >
       {/* Title */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide bg-gradient-to-r from-purple-600 to-purple-200 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-wide bg-gradient-to-r from-purple-600 to-purple-200 bg-clip-text text-black">
           CONTACT US
         </h1>
         <div className="w-24 h-0.5 bg-gradient-to-r from-purple-400 to-indigo-400 mx-auto mt-3 rounded"></div>

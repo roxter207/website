@@ -84,7 +84,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-gradient-to-br from-[#0b0f1a] via-[#111827] to-[#1f2937] text-white">
+    <section  id="faq" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-gradient-to-br from-[#0b0f1a] via-[#111827] to-[#1f2937] text-white">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-10">
         Let’s Understand{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">

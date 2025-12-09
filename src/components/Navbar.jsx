@@ -16,8 +16,8 @@ const navItems = [
     items: [
       { label: "Print Procurement", to: "/print", type: "page" },
       { label: "Bell Returns", to: BELL_RETURN_URL, type: "external" },
-      { label: "Direct Mail Preparation", to: "mail", type: "scroll" },
-      { label: "Fulfilment", to: "fulfilment", type: "scroll" },
+      { label: "Direct Mail Preparation", to: "/mail", type: "page" },
+      { label: "Fulfilment", to: "/fulfilment", type: "page" },
     ],
   },
   {
@@ -32,7 +32,7 @@ const navItems = [
   { label: "career", type: "page", to: "/career" },
   { label: "contact", type: "scroll", to: "contact" },
   { label: "web portal", type: "external", to: WEB_PORTAL_URL },
-  { label: "get a quote", type: "scroll", to: "contact", isButton: true },
+  { label: "get a quote", type: "scroll", to: "faq", isButton: true },
 ];
 
 const Navbar = () => {

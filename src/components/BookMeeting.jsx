@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const BookMeeting = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const BookMeeting = () => {
       <Navbar />
       <section
         id="bookmeeting"
-        className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#f9fafb] via-[#f3f4f6] to-[#e5e7eb] text-gray-900 px-6 md:px-12 py-20 font-sans"
+        className="pt-32  min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#f9fafb] via-[#f3f4f6] to-[#e5e7eb] text-gray-900 px-6 md:px-12 py-10 font-sans "
       >
         {/* Header */}
         <motion.h1
@@ -52,7 +53,7 @@ const BookMeeting = () => {
         {/* Form Container */}
         <motion.form
           onSubmit={handleSubmit}
-          className="w-full max-w-2xl bg-white/70 backdrop-blur-md rounded-3xl shadow-lg border border-gray-200 p-8 md:p-12 space-y-6 transition-all"
+          className="w-full max-w-2xl bg-white/70 backdrop-blur-md rounded-3xl shadow-lg border border-gray-200 p-8 md:p-12 space-y-6 transition-all mb-1.5"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
@@ -125,10 +126,12 @@ const BookMeeting = () => {
         </motion.form>
 
         {/* Footer Note */}
-        <p className="text-xs text-gray-500 mt-8">
+        <p className="text-xs text-gray-500 ">
           By submitting, you agree to our privacy policy.
         </p>
       </section>
+        <Footer/>
+
     </>
   );
 };

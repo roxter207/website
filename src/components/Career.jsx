@@ -31,7 +31,7 @@ const Career = () => {
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto">
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold text-center mb-4"
+          className="text-4xl md:text-6xl font-extrabold text-center mt-6"
           initial={{ y: -40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -44,7 +44,7 @@ const Career = () => {
         </motion.h1>
 
         <motion.h3
-          className="text-purple-700 font-bold text-lg sm:text-xl md:text-2xl"
+          className="text-purple-700 font-semibold text-lg sm:text-xl md:text-2xl pt-3"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
@@ -79,7 +79,7 @@ const Career = () => {
         {/* Card 1 */}
         <motion.div
           variants={fadeUp}
-          className="bg-red-200 w-64 sm:w-72 h-64 sm:h-72 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center text-center p-6"
+          className="bg-purple-300 w-64 sm:w-72 h-64 sm:h-72 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center text-center p-6"
         >
           <h4 className="text-xl sm:text-2xl font-semibold mb-2">
             Competitive Salary
@@ -93,7 +93,7 @@ const Career = () => {
         {/* Card 2 */}
         <motion.div
           variants={fadeUp}
-          className="bg-green-200 w-64 sm:w-72 h-64 sm:h-72 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center text-center p-6"
+          className="bg-purple-300 w-64 sm:w-72 h-64 sm:h-72 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center text-center p-6"
         >
           <h4 className="text-xl sm:text-2xl font-semibold mb-2">
             Benefits Package
@@ -107,7 +107,7 @@ const Career = () => {
         {/* Card 3 */}
         <motion.div
           variants={fadeUp}
-          className="bg-blue-200 w-64 sm:w-72 h-64 sm:h-72 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center text-center p-6"
+          className="bg-purple-300 w-64 sm:w-72 h-64 sm:h-72 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center text-center p-6"
         >
           <h4 className="text-xl sm:text-2xl font-semibold mb-2">
             Career Development

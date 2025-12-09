@@ -10,6 +10,7 @@ import Career from "./components/Career";
 import BookMeeting from "./components/BookMeeting";
 import ScrollTotop from "./components/ScrollTotop";
 import StorySection from "./components/Storysection";
+import MailPrep from "./components/MailPrep";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/equipment" element={<Equipment />} />
           <Route path="/print" element={<Print />} />
           <Route path="/fulfilment" element={<Fulfilment />} />
+          <Route path="/mail" element={<MailPrep/>}/>
           <Route
             path="/accessibilitysection"
             element={<Accessibilitysection />}
