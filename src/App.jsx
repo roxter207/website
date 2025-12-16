@@ -11,11 +11,15 @@ import BookMeeting from "./components/BookMeeting";
 import ScrollTotop from "./components/ScrollTotop";
 import StorySection from "./components/Storysection";
 import MailPrep from "./components/MailPrep";
+import CareerForm from "./components/CareerForm";
+import ReverseLogistics from "./components/ReverseLogistics";
+import Cablerecovery from "./components/Cablerecovery";
 
 function App() {
   return (
+    // Web designed and developed by Sneha Kaimal.
     <>
-      <BrowserRouter basename="/website">
+      <BrowserRouter basename="/website/">
         <ScrollTotop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -23,6 +27,9 @@ function App() {
           <Route path="/print" element={<Print />} />
           <Route path="/fulfilment" element={<Fulfilment />} />
           <Route path="/mail" element={<MailPrep/>}/>
+          <Route path="/reverselogistics" element={<ReverseLogistics/>}/>
+          <Route path="/cablerecovery" element={<Cablerecovery/>}/>
+
           <Route
             path="/accessibilitysection"
             element={<Accessibilitysection />}
@@ -30,6 +37,7 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/bookmeeting" element={<BookMeeting />} />
           <Route path="/aboutus" element={<StorySection />} />
+          <Route path="/careerform" element={<CareerForm />} />
         </Routes>
       </BrowserRouter>
     </>

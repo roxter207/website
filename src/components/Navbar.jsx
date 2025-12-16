@@ -16,13 +16,14 @@ const navItems = [
     items: [
       { label: "Print Procurement", to: "/print", type: "page" },
       { label: "Bell Returns", to: BELL_RETURN_URL, type: "external" },
-      { label: "Direct Mail Preparation", to: "/mail", type: "page" },
+      { label: "Client Communication", to: "/mail", type: "page" },
       { label: "Fulfilment", to: "/fulfilment", type: "page" },
     ],
   },
   {
     label: "about",
     type: "dropdown",
+    to:"about",
     items: [
       { label: "Security & Privacy", to: "security", type: "scroll" },
       { label: "Industries Served", to: "industries", type: "scroll" },

@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const StorySection = () => {
   const containerRef = useRef(null);
-  const navigate = useNavigate(); // ✅ Initialize navigation
+  const navigate = useNavigate();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -42,23 +42,23 @@ const StorySection = () => {
 
   const storyData = [
     {
-      title: "🌱 Where It All Began",
-      text: "A small garage, one printer, and a big dream — that’s where our story started.",
+      title: "🌱 The Beginning: 1995",
+      text: "Our journey began in 1995, supporting the rollout of Sympatico Internet across Canada — helping bring reliable connectivity to homes at a time when the internet was still new.",
       img: img1,
     },
     {
-      title: "🚀 Our First Breakthrough",
-      text: "We took our first major order and realized — we were meant for something bigger.",
+      title: "✉️ Direct to Consumer:  1999",
+      text: "By 1999, we pioneered direct-to-consumer communication through mass mailings and custom return-request letters, strengthening the connection between service providers and customers.",
       img: img2,
     },
     {
-      title: "💡 Innovation Sparks",
-      text: "From manual work to automation, we embraced technology to scale sustainably.",
+      title: "🔧 Engineering Reliability: 2001–2005",
+      text: "As ISPs evolved, so did we. We introduced device testing and refurbishment in 2001, followed by power supply testing in 2005 — preventing downstream issues before they reached customers.",
       img: img3,
     },
     {
-      title: "🌍 Growing Together",
-      text: "Today, we serve clients worldwide — yet our values remain the same.",
+      title: "🌍 Built for the Future: 2017–2025",
+      text: "From our strategic move to Oakville in 2017 to advanced testing for DSL, DOCSIS 3.1, GPON, ATA & WiFi in 2021 — 2025 proudly marks 30 years of trusted service.",
       img: img4,
     },
   ];
@@ -128,12 +128,12 @@ const StorySection = () => {
             viewport={{ once: true }}
             className="text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-3xl mx-auto"
           >
-            What began as a humble effort to make an impact quickly became a
-            journey of innovation, resilience, and leadership. Our founder
-            believed in creating not just a business, but a culture — one that
-            values creativity, teamwork, and customer trust. Over countless late
-            nights and bold ideas, this dream transformed into what we proudly
-            call our company today.
+            What started as a support operation in 1995 quickly became a
+            long-term commitment to quality, reliability, and innovation. As
+            technology evolved, we continuously invested in testing,
+            refurbishment, and logistics to ensure service providers could scale
+            with confidence. Three decades later, our foundation remains the
+            same — precision, trust, and partnership.
           </motion.p>
 
           {/* Tilted Images */}
@@ -188,10 +188,10 @@ const StorySection = () => {
             {/* Animated Stats */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-20">
               {[
-                { label: "Projects Completed", value: "120+" },
-                { label: "Happy Clients", value: "85+" },
-                { label: "Team Members", value: "25+" },
-                { label: "Years of Growth", value: "6+" },
+                { label: "Years in Business", value: "30+" },
+                { label: "Devices Tested & Refurbished", value: "1M+" },
+                { label: "Network Technologies Supported", value: "5+" },
+                { label: "Canada Wide Coverage", value: "100%" },
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -238,12 +238,21 @@ const StorySection = () => {
               viewport={{ once: true }}
               className="mt-16"
             >
-              <a
-                href="#contact"
-                className="inline-block bg-blue-600 text-white text-lg md:text-xl font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
+              <motion.button
+                whileHover={{
+                  scale: 1.07,
+                  boxShadow: "0px 4px 25px rgba(139,92,246,0.4)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  console.log("Navigate triggered");
+                  navigate("/bookmeeting");
+                }}
+                className="mt-7 inline-flex items-center px-8 py-3 rounded-full font-medium text-white 
+                                     bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg hover:opacity-90 transition-all duration-300"
               >
-                Join Our Journey
-              </a>
+                Join Our Journey →
+              </motion.button>
             </motion.div>
           </div>
         </section>

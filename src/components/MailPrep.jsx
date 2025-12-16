@@ -1,4 +1,3 @@
-// Equipment.jsx
 import React from "react";
 import image1 from "../assets/img1.png";
 import image2 from "../assets/img2.png";
@@ -6,19 +5,21 @@ import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
+import { Truck, RotateCcw, FileText, Megaphone } from "lucide-react";
+
 const MailPrep = () => {
-  const navigage = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
-      <div  id="mail"className=" bg-gradient-to-br from-[#0b0f1a] via-[#111827] to-[#1f2937] text-white relative min-h-screen overflow-hidden">
-        {/* Navbar */}
+      <div
+        id="mail"
+        className="bg-gradient-to-br from-[#0b0f1a] via-[#111827] to-[#1f2937] text-white relative min-h-screen overflow-hidden"
+      >
         <Navbar />
 
-        {/* Main content */}
         <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 md:py-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20 items-center">
-            {/* Left Side — Text */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-19 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -27,57 +28,94 @@ const MailPrep = () => {
               className="space-y-6 text-white"
             >
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                Our Advanced <br />{" "}
+                Our Advanced <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">
                   Mail Center
                 </span>
               </h2>
 
-              <p className="text-white text-base md:text-lg leading-relaxed">
-                Our{" "}
-                <span className="font-semibold text-white">
-                  30,000-square-foot facility
-                </span>
-                in Oakville is strategically located near major transportation
-                corridors and equipped with state-of-the-art technology to
-                deliver
-                <span className="text-white font-semibold">
-                  {" "}
-                  high-quality, large-scale printing and finishing solutions.
-                </span>
-              </p>
+              <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-200">
+                <div className="space-y-2">
+                  <p>
+                    MDM is fully equipped to support your{" "}
+                    <span className="font-semibold text-white">
+                      customized direct communication
+                    </span>{" "}
+                    needs — from SMS messages and emails to mailed letters — all
+                    aligned with your corporate branding.
+                  </p>
+                </div>
 
-              <p className="text-white text-base md:text-lg leading-relaxed">
-                Our production floor features{" "}
-                <span className="font-semibold text-white">
-                  Xerox 700 and Versant colour printers, a Xante envelope
-                  printer, Duplo cutter/scanner, digital trimmer,
-                </span>{" "}
-                and{" "}
-                <span className="font-semibold text-white">
-                  multiple Pitney Bowes inserter/folder stations
-                </span>{" "}
-                to ensure efficiency and precision.
-              </p>
+                {/* ---------------- ICON LIST ---------------- */}
+                <div className="space-y-4">
+                  <p className="font-semibold text-white">
+                    Automated Client Communications
+                  </p>
 
-              <p className="text-white text-base md:text-lg leading-relaxed">
-                For packaging and fulfillment, we utilize{" "}
-                <span className="font-semibold text-white">
-                  automated shrinkwrap tunnels, poly wrap systems,
-                </span>{" "}
-                and an{" "}
-                <span className="font-semibold text-white">
-                  advanced poly bag assembly station.
-                </span>
-                All operations are secured with{" "}
-                <span className="font-semibold text-white">
-                  biometric access control
-                </span>{" "}
-                across all entry points.
-              </p>
+                  <div className="space-y-3">
+
+                    {/* 1. Ship Notifications */}
+                    <div className="flex gap-3 items-start">
+                      <div className="w-5 h-5 flex justify-center items-center">
+                        <Truck className="w-4 h-4 text-purple-400" />
+                      </div>
+                      <p>
+                        Ship notifications to your customers, including
+                        real-time carrier status updates
+                      </p>
+                    </div>
+
+                    {/* 2. Return Requests */}
+                    <div className="flex gap-3 items-start">
+                      <div className="w-5 h-5 flex justify-center items-center">
+                        <RotateCcw className="w-4 h-4 text-purple-400" />
+                      </div>
+                      <p>
+                        Return requests with automated reminders when return
+                        waybills have not yet been received by the carrier
+                      </p>
+                    </div>
+
+                    {/* 3. Billing Email / Mail */}
+                    <div className="flex gap-3 items-start">
+                      <div className="w-5 h-5 flex justify-center items-center">
+                        <FileText className="w-4 h-4 text-purple-400" />
+                      </div>
+                      <p>Billing mailings and emails</p>
+                    </div>
+
+                    {/* 4. Other Communications */}
+                    <div className="flex gap-3 items-start">
+                      <div className="w-5 h-5 flex justify-center items-center">
+                        <Megaphone className="w-4 h-4 text-purple-400" />
+                      </div>
+                      <p>
+                        Other client-side communications such as service changes
+                        or promotional initiatives
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* ---------------- RETURNS PROGRAM ---------------- */}
+                <div className="space-y-2">
+                  <p className="font-semibold text-white">MDM Returns Program</p>
+                  <p>
+                    Our Returns Program provides your customers with an{" "}
+                    <span className="font-semibold text-white">
+                      easy and flexible way to return products
+                    </span>
+                    . Choose SMS text, email, or mailed letter — each containing
+                    embedded return waybill information. Enjoy complete
+                    visibility into communication delivery, carrier receipt of
+                    the return waybill, and full shipment tracking.
+                  </p>
+                </div>
+              </div>
             </motion.div>
 
-            {/* Right Side — Image Showcase */}
+            {/* ---------------- IMAGE SECTION ---------------- */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -87,17 +125,19 @@ const MailPrep = () => {
             >
               <motion.img
                 src={image1}
-                alt="Facility equipment 1"
+                alt="Mail center equipment 1"
                 className="w-full h-64 sm:h-80 lg:h-64 rounded-3xl shadow-lg object-cover transform hover:scale-105 transition duration-500"
                 whileHover={{ y: -5 }}
               />
               <motion.img
                 src={image2}
-                alt="Facility equipment 2"
+                alt="Mail center equipment 2"
                 className="w-full h-64 sm:h-80 lg:h-64 rounded-3xl shadow-lg object-cover transform hover:scale-105 transition duration-500"
                 whileHover={{ y: -5 }}
               />
             </motion.div>
+
+            {/* ---------------- BUTTON ---------------- */}
             <motion.button
               whileHover={{
                 scale: 1.07,
@@ -105,8 +145,7 @@ const MailPrep = () => {
               }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/bookmeeting")}
-              className="  items-center px-8 py-3 rounded-full font-medium text-white 
-                                 bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg hover:opacity-90 transition-all duration-300"
+              className="items-center px-8 py-3 rounded-full font-medium text-white bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg hover:opacity-90 transition-all duration-300"
             >
               Book A Meeting →
             </motion.button>

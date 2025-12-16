@@ -5,19 +5,19 @@ import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-const Fulfilment = () => {
+const Cablerecovery = () => {
   const navigate = useNavigate();
   return (
     <>
       <Navbar />
       <div
-        id="fulfilment"
+        id="cablerecovery"
         className="bg-gradient-to-br from-[#0b0f1a] via-[#111827] to-[#1f2937] text-white relative min-h-screen overflow-hidden"
       >
-        <Navbar />
-
         <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20 items-center">
+            
+            {/* Text Section */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -26,44 +26,23 @@ const Fulfilment = () => {
               className="space-y-6 text-white"
             >
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                Our Advanced <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">
-                  Fulfilment Center
-                </span>
+                Cable Recovery
               </h2>
 
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-200">
+              
                 <p>
-                  MDM ensures that the <span className="font-semibold text-white">right product is shipped against the right order, on-time, every time.</span>
+                  In the ISP world, <span className="font-semibold text-white">efficient cable recovery</span> not only saves time but also significantly reduces costs. Our clients have saved millions of dollars through MDM’s proven process of sorting, inspecting for physical damage, and carefully preparing cables for reuse.
                 </p>
 
-                <div className="space-y-2">
-                  <p className="font-semibold text-white">Shipping Made Simple</p>
-                  <ul className="list-disc ml-6 space-y-1">
-                    <li>
-                      Bring your own carrier accounts or use MDM’s — we recommend whichever is cheaper! Our team carefully evaluates carrier options to <span className="font-semibold text-white">reduce delivery windows and minimize cost</span>.
-                    </li>
-                  </ul>
-                </div>
+                <p>
+                  We also handle high-value items such as <span className="font-semibold text-white">power supplies and fiber optic patch cables</span>, ensuring they are fully tested and ready for redeployment, helping to prevent downstream issues and maintain operational efficiency.
+                </p>
 
-                <div className="space-y-2">
-                  <p className="font-semibold text-white">Easy Order Submission</p>
-                  <ul className="list-disc ml-6 space-y-1">
-                    <li>Orders entered via a fully secure feed tunnel</li>
-                    <li>Submitted manually via TXT, XML, or XLS file</li>
-                    <li>Entered manually through our intuitive customer web portal</li>
-                  </ul>
-                </div>
-
-                <div className="space-y-2">
-                  <p className="font-semibold text-white">Advanced Product Tracking</p>
-                  <p>
-                    In the electronics world, tracking which <span className="font-semibold text-white">MAC Address or Serial Number</span> was shipped with each order is crucial. Our custom-built ERP/WMS enables seamless tracking of all product data, automatically providing it in shipping responses back to you.
-                  </p>
-                </div>
               </div>
             </motion.div>
 
+            {/* Image Section */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -85,6 +64,7 @@ const Fulfilment = () => {
               />
             </motion.div>
 
+            {/* CTA Button */}
             <motion.button
               whileHover={{ scale: 1.07, boxShadow: "0px 4px 25px rgba(139,92,246,0.4)" }}
               whileTap={{ scale: 0.95 }}
@@ -93,6 +73,7 @@ const Fulfilment = () => {
             >
               Book A Meeting →
             </motion.button>
+
           </div>
         </section>
       </div>
@@ -100,4 +81,4 @@ const Fulfilment = () => {
   );
 };
 
-export default Fulfilment;
+export default Cablerecovery;

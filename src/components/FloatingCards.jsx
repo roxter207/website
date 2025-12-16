@@ -1,38 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCogs, FaPrint, FaBox } from "react-icons/fa";
+import { FaShippingFast, FaTools, FaPlug } from "react-icons/fa"; // Updated icons
 import { useNavigate } from "react-router-dom";
 
 const FloatingCards = () => {
   const navigate = useNavigate();
   const cards = [
     {
-      icon: <FaBox className="text-indigo-600 text-2xl" />,
-      title: "Fulfilment",
-      link: "/fulfilment",
-
-      //   text: "End-to-end logistics that ensure reliable delivery and customer satisfaction.",
+      icon: <FaShippingFast className="text-blue-600 text-2xl" />,
+      title: "Reverse Logistics",
+      link: "/reverselogistics",
     },
     {
-      icon: <FaCogs className="text-blue-600 text-2xl " />,
-      title: "Reverse Logistics",
-      link: "",
-      //   text: "High-grade tools and professional-grade resources to deliver consistent precision.",
-    },
-        {
-      icon: <FaCogs className="text-blue-600 text-2xl " />,
+      icon: <FaTools className="text-green-600 text-2xl" />,
       title: "Equipment Testing",
       link: "/equipment",
-      //   text: "High-grade tools and professional-grade resources to deliver consistent precision.",
     },
     {
-      icon: <FaPrint className="text-purple-600 text-2xl " />,
-      title: "On Demand Print Service",
-      link: "/print",
-
-      //   text: "Seamless printing and packaging solutions designed for quality and efficiency.",
+      icon: <FaPlug className="text-purple-600 text-2xl" />,
+      title: "Cable Recovery",
+      link: "/cablerecovery",
     },
-    
   ];
 
   return (
@@ -51,9 +39,8 @@ const FloatingCards = () => {
             className="bg-white rounded-xl shadow-md hover:shadow-lg p-5 sm:p-6 text-center transition-all duration-300 flex-1 max-w-xs md:max-w-none"
           >
             <div className="flex items-center justify-center gap-3 text-center ">
-              <div className="text-3xl text-blue-500 ">{card.icon}</div>
+              <div className="text-3xl">{card.icon}</div>
               <h3 className="text-lg font-semibold">{card.title}</h3>
-              {/* <p className="text-gray-500 text-sm leading-relaxed">{card.text}</p> */}
             </div>
           </div>
         ))}

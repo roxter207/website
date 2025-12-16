@@ -6,7 +6,7 @@ const testimonials = [
     name: "Alex Johnson",
     role: "Product Manager, NovaTech",
     quote:
-      "Working with MDM Business Solutions was an absolute pleasure. The project was handled with precision, and the results exceeded our expectations.",
+      "It has been a pleasure working with MDM for over 5 years. Their devotion to working with our team to create positive customer experiences has been a real asset. I highly recommend them to anyone looking to streamline and grow their business.",
   },
   {
     name: "Priya Sharma",
@@ -56,9 +56,7 @@ const Testimonials = () => {
             <h4 className="text-gray-900 font-semibold">
               {testimonials[active].name}
             </h4>
-            <p className="text-gray-500 text-sm">
-              {testimonials[active].role}
-            </p>
+            <p className="text-gray-500 text-sm">{testimonials[active].role}</p>
           </motion.div>
         </AnimatePresence>
       </div>
